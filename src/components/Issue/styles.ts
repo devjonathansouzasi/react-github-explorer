@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import {Link} from "react-router-dom";
-
 import { KeyboardArrowRight } from "@styled-icons/material-rounded"
 
 export const Container = styled.a`

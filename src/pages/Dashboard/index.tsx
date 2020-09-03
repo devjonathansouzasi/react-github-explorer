@@ -4,7 +4,14 @@ import ListSekeleton from 'components/Skeletons/ListSekeleton';
 
 import api from "services/api";
 
-import { Container, Body, Title, Form, ErrorMessage, Repositories } from './styles';
+import { 
+  Container,
+  Body,
+  Title,
+  Form,
+  ErrorMessage,
+  Repositories 
+} from './styles';
 
 const Repository = lazy(() => import('components/Repository'));
 

@@ -1,17 +1,30 @@
-import React, { useEffect, Suspense } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import {useParams, useHistory} from "react-router-dom";
 
 import Header from 'components/Header';
-import Issue from "components/Issue";
+
+import RepositoryInfosSekeleton from 'components/Skeletons/RepositoryInfosSekeleton';
+import ListSekeleton from 'components/Skeletons/ListSekeleton';
 
 import { BASE_URL } from 'services/api';
 
 import useFetch from "hooks/useFetch";
 
-import { Container, Body, InfosWrapper, Avatar, Infos, StatsWrapper, Stat, StarIcon, ForkIcon, OpenedIssueIcon, IssuesList } from './styles';
-import RepositoryInfosSekeleton from 'components/Skeletons/RepositoryInfosSekeleton';
-import ListSekeleton from 'components/Skeletons/ListSekeleton';
-import { ConfigInterface } from 'swr';
+import { 
+  Container,
+  Body,
+  InfosWrapper,
+  Avatar,
+  Infos,
+  StatsWrapper,
+  Stat,
+  StarIcon,
+  ForkIcon,
+  OpenedIssueIcon,
+  IssuesList 
+} from './styles';
+
+const Issue = lazy(() => import("components/Issue"));
 
 interface Repository {
   full_name: string;
