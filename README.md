@@ -1,7 +1,7 @@
 # Github Explorer
 
 **Descrição**
-Usando como base o projeto Github Explorer do bootcamp da rocketseat que tem um design top, feito pelo Tiago Luchtenberg. DEcidi aplicar um pouco dos conceitos dos aprendizados sobre [SWR](https://swr.vercel.app/).
+Usando como base o projeto Github Explorer do bootcamp da rocketseat que tem um design top, feito pelo Tiago Luchtenberg. Decidi aplicar um pouco dos conceitos dos aprendizados sobre [SWR](https://swr.vercel.app/).
 
 **Bibliotecas**
 * [Typescript](https://www.typescriptlang.org/)
